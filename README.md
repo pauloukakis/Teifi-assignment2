@@ -112,11 +112,3 @@ Ensure that the Polaris AppProvider and TitleBar are correctly set up in app/roo
 
 License
 This project is provided as part of an assignment and does not include a specific license. Adjust licensing terms as needed.
-
-Use this README as a template and adjust any details based on your actual project configuration and how you set up the environment variables, scripts, or other specifics.
-
-
-
-
-
-
