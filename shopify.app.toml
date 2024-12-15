@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "69b233c3b86517b99a07063389f7f448"
+application_url = "https://sku-incorrect-denmark-gender.trycloudflare.com"
+embedded = true
+name = "test-app-Teifi"
+handle = "test-app-teifi"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://sku-incorrect-denmark-gender.trycloudflare.com/auth/callback",
+  "https://sku-incorrect-denmark-gender.trycloudflare.com/auth/shopify/callback",
+  "https://sku-incorrect-denmark-gender.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "devstore-test10909.myshopify.com"
+automatically_update_urls_on_dev = true
